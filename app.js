@@ -24,6 +24,7 @@ const renderTasks = () => {
         p.append(btnDel)
 
         btnDel.addEventListener ('click', () => {
+            p.remove()
             taskArr.splice(p, 1)
             console.log(taskArr)
         })
