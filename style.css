@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #cfcfcf;
+}
+
+.todo_list {
+    width: 280px;
+    height: 200px;
+    background: #fff;
+}
