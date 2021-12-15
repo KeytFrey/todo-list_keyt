@@ -2,12 +2,102 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100vh;
+    margin: 0;
+
     background: #cfcfcf;
 }
 
+h1 {
+    text-align: center;
+    color: #2b2a2a;
+}
+
 .todo_list {
-    width: 280px;
-    height: 200px;
+    width: 276px;
+    height: auto;
+    max-height: 100vh;
+}
+
+.inp,
+.inp-edit {
+    margin-right: 15px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid #2b2a2a;
+}
+
+.inp:hover,
+.inp:focus,
+.inp-edit,
+.inp-edit {
+    border-bottom: 1px solid #8a8a8a;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 256px;
+    height: 46px;
+    margin-top: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(43, 42, 42, 0.29);
     background: #fff;
+}
+
+.btn,
+.btn-del,
+.btn-edit {
+    border:none;
+    box-shadow: 2px 2px 10px 0px #2b2a2a;
+    cursor: pointer;
+    color:#fff;
+    background: #2b2a2a;
+}
+
+.btn {
+    width: 70px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.btn-del,
+.btn-edit{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+.btn-edit{
+    background: #2b2a2a url(./img/editw.svg) no-repeat center center / cover;
+}
+
+.btn-del{
+    background: #2b2a2a url(./img/deletew.svg) no-repeat center center / cover;
+}
+
+
+
+.btn-edit:hover,
+.btn-edit:focus,
+.btn-del:hover,
+.btn-del:focus,
+.btn:hover,
+.btn:focus {
+    outline: none;
+    background: #8a8a8a;
+}
+
+.btn-del:hover {
+    background: #8a8a8a url(./img/deleteb.svg) no-repeat center center / cover;
+}
+
+.btn-edit:hover{
+    background: #8a8a8a url(./img/editb.svg) no-repeat center center / cover;
 }
